@@ -8,18 +8,18 @@ public class Cesar {
         System.out.print("Entrez le message : ");
         String text = scan.next();
         scan.close();
-        char code = 0;
+        String code ="";
+
 
         for(int i=0; i < text.length(); i++){
-            int traitement = text.charAt(i);
-            code +=(traitement + num);
-            traitement++;
+            char traitement = text.charAt(i );
+
+            code += String.valueOf(traitement + num);
 
 
 
         }
         System.out.println(code);
-
     }
 }
 
