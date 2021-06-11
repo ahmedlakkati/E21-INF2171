@@ -12,26 +12,48 @@ public class Cesar {
         System.out.print("Entrez le message : ");
         String text = scan.next();
         scan.close();
-        if (num >0){
-        for(int i=0; i < text.length(); i++) {
-            char traitement = text.charAt(i);
-            if (traitement > 96 && traitement < 123) {
-                char code = 0;
-                code += ((traitement + num - 97) % 26) + 97;
-                char ch = (char) code;
-                System.out.print(code);
-            } else if (traitement > 64 && traitement < 91) {
-                char code = 0;
-                code += ((traitement + num - 65) % 26) + 65;
-                char ch = (char) code;
-                System.out.print(code);
-            }
-        }
-        }else if (num <0){
-            System.out.println("work in progress");
+       for(int i=0; i<text.length(); i++){
+           char traitement = text.charAt(i);
+           char code =0;
+           if(traitement > 96 && traitement < 123){
+               if(num>0 && (traitement -97 + num >26)){
+                   code += ((traitement + num - 97) % 26) + 97;
+                   System.out.print(code);
 
-        }
+               }else if (num>0 && (traitement -97 + num <26)){
+                   code+= traitement+num;
+                   System.out.print(code);
+               }else if (num<0 && (traitement -97 + num <=0)){
+                  // int h = traitement -97 +num;
+                  // int modulo =(26+(h%26))+97;
+                 //  System.out.println(h);
+                  // System.out.println(modulo);
+                   code +=  (traitement -97 +num % 26)+97;
+                   System.out.print(code);
+
+               } else if (num<0  && (traitement -97 + num >=0)){
+                   code += traitement +num;
+                   System.out.print(code);
+               }
+           }if(traitement > 64 && traitement <91){
+               if(num>0 && (traitement -65 + num >26)){
+                   code += ((traitement + num - 65) % 26) + 65;
+                   System.out.print(code);
+
+               }else if (num>0 && (traitement -65 + num <26)){
+                   code+= traitement+num;
+                   System.out.print(code);
+               }else if (num<0 && (traitement -65 + num <0)){
+                   code +=  (26+(traitement -65 +num % 26)+65);
+                   System.out.print(code);
+
+               } else if (num<0  && (traitement -65 + num >0)){
+                   code += traitement +num;
+                   System.out.print(code);
+               }
+           }
+           }
+       }
     }
-}
 
 
