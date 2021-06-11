@@ -19,18 +19,18 @@ public class Cesar {
                if(num>0 && (traitement -97 + num >26)){
                    code += ((traitement + num - 97) % 26) + 97;
                    System.out.print(code);
-
                }else if (num>0 && (traitement -97 + num <26)){
                    code+= traitement+num;
                    System.out.print(code);
                }else if (num<0 && (traitement -97 + num <=0)){
-                  // int h = traitement -97 +num;
-                  // int modulo =(26+(h%26))+97;
-                 //  System.out.println(h);
-                  // System.out.println(modulo);
-                   code +=  (traitement -97 +num % 26)+97;
+                   int h = traitement -97 +num;
+                   int modulo =((h%26));
+                  if(modulo !=0) {
+                      code += 26 + (modulo) + 97;
+                  }else{
+                      code+=modulo+97;
+                  }
                    System.out.print(code);
-
                } else if (num<0  && (traitement -97 + num >=0)){
                    code += traitement +num;
                    System.out.print(code);
@@ -39,14 +39,12 @@ public class Cesar {
                if(num>0 && (traitement -65 + num >26)){
                    code += ((traitement + num - 65) % 26) + 65;
                    System.out.print(code);
-
                }else if (num>0 && (traitement -65 + num <26)){
                    code+= traitement+num;
                    System.out.print(code);
                }else if (num<0 && (traitement -65 + num <0)){
                    code +=  (26+(traitement -65 +num % 26)+65);
                    System.out.print(code);
-
                } else if (num<0  && (traitement -65 + num >0)){
                    code += traitement +num;
                    System.out.print(code);
