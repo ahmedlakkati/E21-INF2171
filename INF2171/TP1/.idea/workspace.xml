@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3ffbf4a6-db12-462b-b94d-e9c931d21460" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TP1/Cesar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP1/Cesar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Cesar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cesar.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +23,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1tjh1NwPqciKE2oYWedutHu59Ml" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -41,9 +44,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Cesar">
     <configuration name="Cesar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Cesar" />
+      <module name="TP1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="codeCesar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codeCesar" />
       <module name="TP1" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -52,6 +62,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Cesar" />
+        <item itemvalue="Application.codeCesar" />
       </list>
     </recent_temporary>
   </component>
@@ -80,21 +91,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Cesar.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Cesar.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
