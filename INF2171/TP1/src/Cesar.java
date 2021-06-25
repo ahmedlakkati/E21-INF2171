@@ -50,25 +50,67 @@ public class Cesar {
                     code += traitement + num;
                     System.out.print(code);
                 }
-            } else if (traitement == ' '|traitement == '.'|traitement == '\''|traitement == '-'|traitement == '!'|traitement == '?') {
+            } else if (traitement == ' ' | traitement == '.' | traitement == '\'' | traitement == '-' | traitement == '!' | traitement == '?') {
                 if (traitement == 32) {
-                    code += (traitement + num - 32) % 6;
-                    System.out.print(ponctuation[code]);
+                    if (num >= 0) {
+                        code += (traitement + num - 32) % 6;
+                        System.out.print(ponctuation[code]);
+                    } else {
+                        int h = traitement + num - 32;
+                        int modulo = 6 + (h % 6);
+                        code += ponctuation[modulo];
+                        System.out.println(code);
+                    }
                 } else if (traitement == 46) {
-                    code += (traitement + num + 1 - 46) % 6;
-                    System.out.print(ponctuation[code]);
+                    if (num >= 0) {
+                        code += (traitement + num - 46) % 6;
+                        System.out.print(ponctuation[code]);
+                    } else {
+                        int h = traitement + num - 46;
+                        int modulo = 5 + (h % 6);
+                        code += ponctuation[modulo];
+                        System.out.println(code);
+                    }
                 } else if (traitement == 39) {
-                    code += (traitement + num + 2 - 39) % 6;
-                    System.out.print(ponctuation[code]);
+                    if (num >= 0) {
+                        code += (traitement + num - 39) % 6;
+                        System.out.print(ponctuation[code]);
+                    } else {
+                        int h = traitement + num - 39;
+                        int modulo = 5 + (h % 6);
+                        code += ponctuation[modulo];
+                        System.out.println(code);
+                    }
                 } else if (traitement == 45) {
-                    code += (traitement + num + 3 - 45) % 6;
-                    System.out.print(ponctuation[code]);
+                    if (num >= 0) {
+                        code += (traitement + num - 45) % 6;
+                        System.out.print(ponctuation[code]);
+                    } else {
+                        int h = traitement + num - 45;
+                        int modulo = 5 + (h % 6);
+                        code += ponctuation[modulo];
+                        System.out.println(code);
+                    }
                 } else if (traitement == 33) {
-                    code += (traitement + num + 4 - 33) % 6;
-                    System.out.print(ponctuation[code]);
+                    if (num >= 0) {
+                        code += (traitement + num - 33) % 6;
+                        System.out.print(ponctuation[code]);
+                    } else {
+                        int h = traitement + num - 33;
+                        int modulo = 5 + (h % 6);
+                        code += ponctuation[modulo];
+                        System.out.println(code);
+                    }
                 } else if (traitement == 63) {
-                    code += (traitement + num + 5 - 63) % 6;
-                    System.out.print(ponctuation[code]);
+                    if (num >= 0) {
+                        code += (traitement + num - 63) % 6;
+                        System.out.print(ponctuation[code]);
+                    } else {
+                        int h = traitement + num - 63;
+                        int modulo = 5 + (h % 6);
+                        code += ponctuation[modulo];
+                        System.out.println(code);
+                    }
                 }
             } else {
                 code += traitement;
