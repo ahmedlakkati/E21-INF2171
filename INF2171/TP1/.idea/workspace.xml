@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ffbf4a6-db12-462b-b94d-e9c931d21460" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TP1/Cesar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TP1/Cesar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cesar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cesar.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,16 +89,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Cesar.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
